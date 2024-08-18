@@ -17,6 +17,7 @@ let player2 = "O";
 let turn = 0;
 let winner = false;
 
+//uses jquery to hide the alerts initially
 $('#gameStart').hide();
 $('#winner').hide();
 $('#drawGame').hide();
@@ -115,7 +116,7 @@ const gameStart = () => {
         }
 
         if(winner === false){
-                    //conditional logic to alternate between players each turn
+                    //conditional logic to alternate between players each turn, adding and removing the background to indicate whose turn it is
         if(currentPlayer === player1){
             currentPlayer = player2;
             console.log(turn++);
